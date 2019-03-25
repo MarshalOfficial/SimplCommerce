@@ -50,6 +50,10 @@ namespace SimplCommerce.Module.PaymentBraintree.Areas.PaymentBraintree.Controlle
 
             var curentUser = await _workContext.GetCurrentUser();
             var cart = await _cartService.GetActiveCartDetails(curentUser.Id);
+            if(cart == null)
+            {
+                return NotFound();
+            }
 
             var orderCreateResult = await _orderService.CreateOrder(cart.Id, PaymentProviderHelper.BraintreeProviderId, 0, OrderStatus.PendingPayment);
 
@@ -119,7 +123,7 @@ namespace SimplCommerce.Module.PaymentBraintree.Areas.PaymentBraintree.Controlle
                 _paymentRepository.Add(payment);
                 await _paymentRepository.SaveChangesAsync();
 
-                return Ok(transaction.Id);
+                return Ok(new { Status = "success", OrderId = order.Id, TransactionId = transaction.Id });
             }
             else
             {
