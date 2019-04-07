@@ -143,7 +143,8 @@ li.nav-item-group, li.nav-item-group a {
 
 .footer-content {
     margin-top: 30px;
-    background-color: #eee;
+    /*background-color: #eee;*/
+    background-color: #00FFBF;
 }
 
     .footer-content hr {
@@ -475,3 +476,4 @@ li.nav-item-group, li.nav-item-group a {
 .modal-padding {
     padding: 10px 10px 10px 10px;
 }
+

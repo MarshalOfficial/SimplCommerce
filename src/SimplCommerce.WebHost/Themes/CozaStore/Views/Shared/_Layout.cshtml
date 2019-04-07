@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@ViewData["Title"] - SimplCommerce</title>
+    <title>@ViewData["Title"] - شاران</title>
     @RenderSection("additionalMeta", false)
 
     <link simpl-append-version="true" rel="stylesheet" type="text/css" href="~/lib/bootstrap4/css/bootstrap.css" />
@@ -34,19 +34,21 @@
     <header class="header-v4">
         <!-- Header desktop -->
         <div class="container-menu-desktop">
+            
             <!-- Topbar -->
             <div class="top-bar">
                 <div class="content-topbar flex-sb-m h-full container">
                     <div class="left-top-bar">
-                        Free shipping for standard order over $100
+                        سفارش آنلاین محصولات شاران
                     </div>
 
                     <div class="right-top-bar flex-w h-full">
-                        <a href="~/help-center" class="flex-c-m trans-04 p-lr-25">
-                            Help & FAQs
-                        </a>
-                        <partial name="_SelectLanguagePartial" />
+                        @*<a href="~/help-center" class="flex-c-m trans-04 p-lr-25">
+            Help & FAQs
+        </a>*@
+                        @*<partial name="_SelectLanguagePartial" />*@
                         <partial name="_LoginPartial" />
+                        
                     </div>
                 </div>
             </div>
@@ -56,7 +58,7 @@
 
                     <!-- Logo desktop -->
                     <a href="~/" class="logo">
-                        <img src="~/themes/CozaStore/images/icons/logo-01.png" alt="IMG-LOGO">
+                        <img src="~/modules/core/SHARAN.png" alt="شاران">
                     </a>
 
                     <!-- Menu desktop -->
@@ -72,7 +74,9 @@
                             <i class="zmdi zmdi-search"></i>
                         </div>
 
+                        <partial name="_SelectLanguagePartial" />
                         @await Component.InvokeAsync("CartBadge")
+
                     </div>
                 </nav>
             </div>
@@ -81,7 +85,10 @@
         <div class="wrap-header-mobile">
             <!-- Logo moblie -->
             <div class="logo-mobile">
-                <a href="~/"><img src="~/themes/CozaStore/images/icons/logo-01.png" alt="IMG-LOGO"></a>
+                @*<a href="~/"><img src="~/themes/CozaStore/images/icons/logo-01.png" alt="IMG-LOGO"></a>*@
+                <a href="~/" class="logo">
+                    <img src="~/modules/core/SHARAN.png" alt="شاران">
+                </a>
             </div>
 
             <!-- Icon header -->
@@ -90,6 +97,7 @@
                     <i class="zmdi zmdi-search"></i>
                 </div>
 
+                <partial name="_SelectLanguagePartial" />
                 @await Component.InvokeAsync("CartBadge")
             </div>
 
@@ -105,15 +113,15 @@
             <ul class="topbar-mobile">
                 <li>
                     <div class="left-top-bar">
-                        Free shipping for standard order over $100
+                        سفارش آنلاین محصولات شاران
                     </div>
                 </li>
 
                 <li>
                     <div class="right-top-bar flex-w h-full">
-                        <a href="#" class="flex-c-m p-lr-10 trans-04">
+                        @*<a href="#" class="flex-c-m p-lr-10 trans-04">
                             Help & FAQs
-                        </a>
+                        </a>*@
 
                         <partial name="_LoginPartial" />
                     </div>
@@ -129,6 +137,8 @@
     </header>
 
     @RenderSection("featured", false)
+
+    
 
     <div class="container body-content">
         @RenderBody()
@@ -153,45 +163,48 @@
 
                 <div class="col-sm-6 col-lg-3 p-b-50">
                     <h4 class="stext-301 cl0 p-b-30">
-                        GET IN TOUCH
+                        @Localizer["Contact"]
                     </h4>
 
                     <p class="stext-107 cl7 size-201">
-                        Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+                        @Localizer["ContactText"]
                     </p>
 
                     <div class="p-t-27">
-                        <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                        @*<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                             <i class="fa fa-facebook"></i>
-                        </a>
+                        </a>*@
 
-                        <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                        <a href="http://instagram.com/sharannuts" target="_blank" class="fs-32 cl7 hov-cl1 trans-04 m-r-16">
                             <i class="fa fa-instagram"></i>
                         </a>
 
-                        <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                        @*<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                             <i class="fa fa-pinterest-p"></i>
-                        </a>
+                        </a>*@
                     </div>
                 </div>
 
                 <div class="col-sm-6 col-lg-3 p-b-50">
-                    <h4 class="stext-301 cl0 p-b-30">
-                        Newsletter
-                    </h4>
+                    <div class="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.4988302485162!2d51.31192641460688!3d35.73854223443543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dfdf5c167bf01%3A0xb0f451bcabbc779c!2z2YHYsdmI2LTar9in2Ycg2LTYp9ix2KfZhg!5e0!3m2!1sen!2s!4v1554638749503!5m2!1sen!2s" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    @*<h4 class="stext-301 cl0 p-b-30">
+            Newsletter
+        </h4>
 
-                    <form>
-                        <div class="wrap-input1 w-full p-b-4">
-                            <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
-                            <div class="focus-input1 trans-04"></div>
-                        </div>
+        <form>
+            <div class="wrap-input1 w-full p-b-4">
+                <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
+                <div class="focus-input1 trans-04"></div>
+            </div>
 
-                        <div class="p-t-18">
-                            <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                                Subscribe
-                            </button>
-                        </div>
-                    </form>
+            <div class="p-t-18">
+                <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                    Subscribe
+                </button>
+            </div>
+        </form>*@
                 </div>
             </div>
 
@@ -221,7 +234,7 @@
                 <p class="stext-107 cl6 txt-center">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script>  SimplCommerce | This theme is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> | Powered by <a href="https://www.simplcommerce.com">SimplCommerce</a>
+                    <script>document.write(new Date().getFullYear());</script> SHARAN | Powered by <a href="https://www.linkedin.com/in/mohammadreza-rahmatzadeh/" target="_blank">Marshal</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>
