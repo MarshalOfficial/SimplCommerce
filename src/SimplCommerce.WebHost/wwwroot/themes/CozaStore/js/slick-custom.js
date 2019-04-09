@@ -165,7 +165,10 @@
                 },  
             });
         });
-            
-                
+
+        //$('.single-item-rtl').slick({
+        //    rtl: true
+        //}); commented by marshal,از اول نبود اضافه کردمش کار نکرد کامنتش کردم تا ببینیم چیه راه حل
+
 
 })(jQuery);
