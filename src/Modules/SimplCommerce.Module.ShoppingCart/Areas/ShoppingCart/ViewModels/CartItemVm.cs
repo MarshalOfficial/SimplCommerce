@@ -16,7 +16,7 @@ namespace SimplCommerce.Module.ShoppingCart.Areas.ShoppingCart.ViewModels
 
         public decimal ProductPrice { get; set; }
 
-        public string ProductPriceString => ProductPrice.ToString("C");
+        public string ProductPriceString => ProductPrice.ToString("C0");
 
         public int ProductStockQuantity { get; set; }
 
@@ -28,7 +28,7 @@ namespace SimplCommerce.Module.ShoppingCart.Areas.ShoppingCart.ViewModels
 
         public decimal Total => Quantity * ProductPrice;
 
-        public string TotalString => Total.ToString("C");
+        public string TotalString => Total.ToString("C0");
 
         public IEnumerable<ProductVariationOption> VariationOptions { get; set; } = new List<ProductVariationOption>();
 
