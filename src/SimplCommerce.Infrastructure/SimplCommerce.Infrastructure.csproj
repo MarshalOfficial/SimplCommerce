@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Humanizer" Version="2.5.16" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="MediatR" Version="6.0.0" />
     <PackageReference Include="cloudscribe.Web.Pagination" Version="2.1.7" />
