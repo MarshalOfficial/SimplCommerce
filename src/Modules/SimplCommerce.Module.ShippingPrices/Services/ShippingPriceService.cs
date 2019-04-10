@@ -26,8 +26,12 @@ namespace SimplCommerce.Module.ShippingPrices.Services
             var applicableShippingPrices = new List<ShippingPrice>();
             var providers = await _shippingProviderRepository.Query().ToListAsync();
             var shippingRateServices = _httpContext.RequestServices.GetServices<IShippingPriceServiceProvider>();
+            
+            //Marshal
+            //providers.FirstOrDefault(l => l.Id == "FreeShip").IsEnabled = true;
+            //
 
-            foreach(var provider in providers)
+            foreach (var provider in providers)
             {
                 if(!provider.IsEnabled)
                 {

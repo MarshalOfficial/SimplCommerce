@@ -157,6 +157,12 @@ namespace SimplCommerce.Module.Orders.Services
                 return Result.Fail<Order>(checkingDiscountResult.ErrorMessage);
             }
 
+            //Marshal
+            //if (string.IsNullOrWhiteSpace(shippingMethodName))
+            //{
+            //    shippingMethodName = "Free";
+            //}
+            //
             var validateShippingMethodResult = await ValidateShippingMethod(shippingMethodName, shippingAddress, cart);
             if (!validateShippingMethodResult.Success)
             {
@@ -465,13 +471,14 @@ namespace SimplCommerce.Module.Orders.Services
                 ShippingAddress = shippingAddress
             });
 
-            var shippingMethod = applicableShippingPrices.FirstOrDefault(x => x.Name == shippingMethodName);
-            if (shippingMethod == null)
-            {
-                return Result.Fail<ShippingPrice>($"Invalid shipping method {shippingMethod}");
-            }
+            //var shippingMethod = applicableShippingPrices.FirstOrDefault(x => x.Name == shippingMethodName);
+            //if (shippingMethod == null)
+            //{
+            //    return Result.Fail<ShippingPrice>($"Invalid shipping method {shippingMethod}");
+            //}
 
-            return Result.Ok(shippingMethod);
+            //return Result.Ok(shippingMethod);
+            return Result.Ok(new ShippingPrice(){Price = 0,Description = "پرداخت در محل",Name = "پرداخت در محل"});
         }
     }
 }

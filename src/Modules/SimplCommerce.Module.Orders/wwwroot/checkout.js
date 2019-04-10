@@ -66,8 +66,10 @@
                     });
                     $('.btn-order').prop('disabled', false);
                 } else {
-                    $shippingMethods.append("Sorry, this items can't be shipped to your selected address");
-                    $('.btn-order').prop('disabled', true);
+                    //$shippingMethods.append("Sorry, this items can't be shipped to your selected address");
+                    $shippingMethods.append("هزینه حمل را هنگام تحویل کالا پرداخت نمایید.");
+                    //$('.btn-order').prop('disabled', true);
+                    $('.btn-order').prop('disabled', false);
                 }
 
                 var $tax = $('#orderSummaryTax');

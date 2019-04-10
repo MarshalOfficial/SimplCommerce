@@ -155,7 +155,8 @@
                 vm.shippingOptions = result.data.shippingPrices;
                 vm.cart = result.data.cart;
                 if (vm.shippingOptions.length === 0) {
-                    toastr.error("Sorry, this items can't be shipped to your selected address");
+                    //toastr.error("Sorry, this items can't be shipped to your selected address");
+                    toastr.error("هزینه حمل را هنگام تحویل کالا پرداخت نمایید.");
                 } else {
                     vm.selectedShippingOption = result.data.selectedShippingMethodName;
                 }
