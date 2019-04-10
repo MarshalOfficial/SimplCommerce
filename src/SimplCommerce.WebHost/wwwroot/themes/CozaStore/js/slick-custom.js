@@ -45,6 +45,7 @@
                 pauseOnFocus: false,
                 pauseOnHover: false,
                 slidesToShow: 1,
+                rtl: true,// You Need Add Option rtl Here... : Literal Commit
                 slidesToScroll: 1,
                 fade: true,
                 speed: 1000,
@@ -165,10 +166,6 @@
                 },  
             });
         });
-
-        //$('.single-item-rtl').slick({
-        //    rtl: true
-        //}); commented by marshal,از اول نبود اضافه کردمش کار نکرد کامنتش کردم تا ببینیم چیه راه حل
 
 
 })(jQuery);

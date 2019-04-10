@@ -38,9 +38,74 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Black.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
 
 @font-face {
-    font-family: Shabnam;
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Bold.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Medium.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Light.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum).eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum).woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
     src: url('../fonts/Shabnam.eot?#') format('eot'), 
          url('../fonts/Shabnam.woff') format('woff'), 
          url('../fonts/Shabnam.ttf') format('truetype');
@@ -234,13 +299,13 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 [ Top bar ]*/
 .top-bar {
     height: 40px;
-    background-color: #64D2AE;
+    background-color: black;
 }
 
 /*---------------------------------------------*/
 .left-top-bar {
-  font-family: Shabnam,Poppins-Regular;
-  font-size: 12px;
+  font-family: IRANSans,Poppins-Regular;
+  font-size: 15px;
   line-height: 1.8;
   color: #b2b2b2;
 }
@@ -248,13 +313,12 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*---------------------------------------------*/
 .right-top-bar a {
-  font-family: Shabnam,Poppins-Regular;
-  font-size: 12px;
-  line-height: 1.8;
-
-  height: 100%;
-  color: #b2b2b2;
-  border-right: 1px solid rgba(255,255,255,0.3);
+    font-family: IRANSans,Poppins-Regular;
+    font-size: 12px;
+    line-height: 1.8;
+    height: 100%;
+    color: #b2b2b2;
+    border-right: 1px solid rgba(255,255,255,0.3);
 }
 
 .right-top-bar a:first-child {
@@ -316,7 +380,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box;
   align-items: center;
   background-color: transparent;
 }
@@ -376,7 +440,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .main-menu > li > a {
-  font-family: Shabnam,Poppins-Medium;
+  font-family: IRANSans,Poppins-Medium;
   font-size: 14px;
   color: #333;
   padding: 5px 0px;
@@ -432,7 +496,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .sub-menu a {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   line-height: 1.5;
   color: #555;
@@ -502,7 +566,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*---------------------------------------------*/
 .cart-badge .badge {
     content: attr(data-notify);
-    font-family: Shabnam,Poppins-Regular;
+    font-family: IRANSans,Poppins-Regular;
     font-size: 12px;
     color: #fff;
     line-height: 15px;
@@ -722,10 +786,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 @media (max-width: 991px){
   .wrap-header-mobile {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
-    display: flex;
   }
   .container-menu-desktop {display: none;}
 }
@@ -746,7 +808,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
     }
 
         .main-menu-m > li > a {
-            font-family: Shabnam,Poppins-Medium;
+            font-family: IRANSans,Poppins-Medium;
             font-size: 14px;
             color: white;
             line-height: 2.8;
@@ -799,7 +861,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
     }
 
         .sub-menu-m a {
-            font-family: Shabnam,Poppins-Regular;
+            font-family: IRANSans,Poppins-Regular;
             font-size: 14px;
             color: #666;
             line-height: 2.5;
@@ -1038,7 +1100,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 .header-cart-item-name {
   display: block;
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   color: #555;
   line-height: 1.3;
@@ -1046,14 +1108,14 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 .header-cart-item-info {
   display: block;
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   color: #888;
   line-height: 1.5;
 }
 
 .header-cart-total {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 18px;
   color: #222;
   line-height: 1.3;
@@ -1098,7 +1160,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*------------------------------------------------------------------
 [ in select ]*/
 .rs1-select2 .select2-container .select2-selection--single .select2-selection__rendered {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 13px;
   color: #555;
   line-height: 1.2;
@@ -1175,7 +1237,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .rs1-select2 .select2-results__options {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 13px;
   color: #555;
   line-height: 1.2;
@@ -1184,7 +1246,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .rs1-select2 .select2-search--dropdown .select2-search__field {
   border: 1px solid #aaa;
   outline: none;
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 13px;
   color: #555;
   line-height: 1.2;
@@ -1622,7 +1684,7 @@ button.mfp-close {
 }
 
 .tab01 .nav-link {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 15px;
   color: #888;
   line-height: 1.2;
@@ -1661,7 +1723,7 @@ button.mfp-close {
 
 .swal-button {
   background-color: #717fe0;
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 16px;
   color: white;
   text-transform: uppercase;
@@ -1682,7 +1744,7 @@ button.mfp-close {
 }
 
 .swal-title {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   color: #333333;
   font-size: 18px;
   line-height: 1.5;
@@ -1690,7 +1752,7 @@ button.mfp-close {
 }
 
 .swal-text {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   color: #555555;
   font-size: 16px;
   line-height: 1.666667;
@@ -1834,7 +1896,7 @@ input.num-product::-webkit-inner-spin-button {
 
 .tooltip100::after {
   content: attr(data-tooltip);
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 12px;
   color: #888;
   line-height: 18px;
@@ -1971,7 +2033,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .table-shopping-cart .table_head th {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 13px;
   color: #555;
   text-transform: uppercase;
@@ -1981,7 +2043,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .table-shopping-cart td {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   color: #555;
   line-height: 1.6;
 }
@@ -2149,106 +2211,107 @@ input.num-product::-webkit-inner-spin-button {
 /*//////////////////////////////////////////////////////////////////
 [ S-Text 0 - 15 ]*/
 .stext-101 {
-  font-family: Shabnam,Poppins-Medium;
-  font-size: 15px;
+  font-family: IRANSans,Poppins-Medium;
+  font-size: 20px;
+  font-weight:600;
   line-height: 1.466667;
   text-transform: uppercase;
 }
 
 .stext-102 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   line-height: 1.7;
 }
 
 .stext-103 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 15px;
   line-height: 1.466667;
 }
 
 .stext-104 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   line-height: 1.466667;
 }
 
 .stext-105 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   line-height: 1.466667;
   letter-spacing: 1px;
 }
 
 .stext-106 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 15px;
   line-height: 1.2;
 }
 
 .stext-107 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 13px;
   line-height: 1.923;
 }
 
 .stext-108 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   line-height: 1.7143;
 }
 
 .stext-109 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 12px;
   line-height: 1.833333;
 }
 
 .stext-110 {
-  font-family: Shabnam,Poppins-Medium;
+  font-family: IRANSans,Poppins-Medium;
   font-size: 15px;
   line-height: 1.466667;
 }
 
 .stext-111 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 13px;
   line-height: 1.6923;
 }
 
 .stext-112 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 13px;
   line-height: 1.6923;
   text-transform: uppercase;
 }
 
 .stext-113 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   line-height: 1.7857;
 }
 
 .stext-114 {
-  font-family: Shabnam,Poppins-Italic;
+  font-family: IRANSans,Poppins-Italic;
   font-size: 15px;
   line-height: 1.666667;
 }
 
 .stext-115 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 15px;
   line-height: 1.666667;
 }
 
 .stext-116 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 15px;
   line-height: 1.266667;
 }
 
 .stext-117 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 15px;
   line-height: 1.666667;
 }
@@ -2266,81 +2329,81 @@ input.num-product::-webkit-inner-spin-button {
 /*//////////////////////////////////////////////////////////////////
 [ M-Text 16 - 25 ]*/
 .mtext-101 {
-  font-family: Shabnam,Poppins-Medium;
+  font-family: IRANSans,Poppins-Medium;
   font-size: 18px;
   line-height: 1.333333;
 }
 
 .mtext-102 {
-  font-family: Shabnam,Poppins-SemiBold;
+  font-family: IRANSans,Poppins-SemiBold;
   font-size: 16px;
   line-height: 1.6;
 }
 
 .mtext-103 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 18px;
   line-height: 1.333333;
   text-transform: uppercase;
 }
 
 .mtext-104 {
-  font-family: Shabnam,Poppins-Medium;
+  font-family: IRANSans,Poppins-Medium;
   font-size: 16px;
   line-height: 1.6;
 }
 
 .mtext-105 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 24px;
   line-height: 1.5;
 }
 
 .mtext-106 {
-  font-family: Shabnam,Poppins-SemiBold;
+  font-family: IRANSans,Poppins-SemiBold;
   font-size: 18px;
   line-height: 1.388888;
 }
 
 .mtext-107 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 16px;
   line-height: 1.625;
 }
 
 .mtext-108 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 20px;
   line-height: 1.3;
 }
 
 .mtext-109 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 20px;
   line-height: 1.3;
   text-transform: uppercase;
 }
 
 .mtext-110 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 18px;
   line-height: 1.222222;
 }
 
 .mtext-111 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 25px;
   line-height: 1.2;
 }
 
 .mtext-112 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 22px;
   line-height: 1.333333;
 }
 
 .mtext-113 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 22px;
   line-height: 1.333333;
   text-transform: uppercase;
@@ -2350,57 +2413,60 @@ input.num-product::-webkit-inner-spin-button {
 /*//////////////////////////////////////////////////////////////////
 [ L-Text >= 26 ]*/
 .ltext-101 {
-  font-family: Shabnam,Poppins-Regular;
-  font-size: 28px;
-  line-height: 1.2857;
+    font-family: IRANSans,Poppins-Regular;
+    font-size: 28px;
+    color: #6c7ae0;
+    font-weight:600;
+    line-height: 1.2857;
 }
 
 .ltext-102 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 28px;
   line-height: 1.1;
 }
 
 .ltext-103 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 36px;
   line-height: 1.1;
   text-transform: uppercase;
+  text-align:right;
 }
 
 .ltext-104 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 60px;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 .ltext-105 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 50px;
   line-height: 1.1;
 }
 
 .ltext-106 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 36px;
   line-height: 1.2;
 }
 
 .ltext-107 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 30px;
   line-height: 1.1;
 }
 
 .ltext-108 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 26px;
   line-height: 1.3846;
 }
 
 .ltext-109 {
-  font-family: Shabnam,Poppins-Bold;
+  font-family: IRANSans,Poppins-Bold;
   font-size: 36px;
   line-height: 1.2;
 }
@@ -2408,8 +2474,10 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .ltext-201 {
-  font-family: Shabnam,PlayfairDisplay-Bold;
+  font-family: IRANSans,PlayfairDisplay-Bold;
   font-size: 60px;
+  font-weight:700;
+  color:white;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -2819,7 +2887,7 @@ input.num-product::-webkit-inner-spin-button {
 
 .label1::after {
   content: attr(data-label1);
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 10px;
   line-height: 15px;
   color: #fff;
@@ -2877,7 +2945,7 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .how-pagination1 {
-  font-family: Shabnam,Poppins-Regular;
+  font-family: IRANSans,Poppins-Regular;
   font-size: 14px;
   color: #808080;
 
