@@ -1,4 +1,4 @@
-@model IEnumerable<SimplCommerce.Module.Catalog.Areas.Catalog.ViewModels.CategoryMenuItem>
+﻿@model IEnumerable<SimplCommerce.Module.Catalog.Areas.Catalog.ViewModels.CategoryMenuItem>
 
 @inject IViewLocalizer Localizer
 
@@ -12,7 +12,18 @@
             <ul class="sub-menu sub-menu-m">
                 @foreach (var childItem in item.ChildItems)
                 {
-                    <li><a href="/@childItem.Slug">@childItem.Name</a></li>
+                <li>
+                    <a href="/@childItem.Slug">@childItem.Name</a>
+                    <ul class="sub-menu sub-menu-m">
+                        @foreach (var childchild in childItem.ChildItems)
+                        {
+                            <li><a href="/@childchild.Slug">@childchild.Name</a></li>
+                        }
+                    </ul>
+                </li>
+
+                    
+
                 }
             </ul>
             <span class="arrow-main-menu-m d-md-none">
