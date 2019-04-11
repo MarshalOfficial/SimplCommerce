@@ -117,7 +117,7 @@
 }
 
 .product-list-filters h3 {
-    margin-top: 27px;
+    text-align:right;
 }
 
 .product-list .btn {
@@ -173,9 +173,9 @@
 }
 
 .category-result h2 {
-    float: left;
+    float: right;
     font-size: 30px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .category-result .badge-results {
@@ -185,6 +185,7 @@
     padding: 3px 8px;
     position: relative;
     background: #c9253c;
+    float:right;
 }
 
 .product-list-display-options {
@@ -317,6 +318,7 @@
 .list-inline {
     margin-bottom: 6px;
     margin-top: 6px;
+    float:left;
 }
 
     .list-inline li {

@@ -299,25 +299,26 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 [ Top bar ]*/
 .top-bar {
     height: 40px;
-    background-color: black;
+    background-color: #5b65af;
 }
 
 /*---------------------------------------------*/
 .left-top-bar {
-  font-family: IRANSans,Poppins-Regular;
-  font-size: 15px;
-  line-height: 1.8;
-  color: #b2b2b2;
+    font-family: IRANSans,Poppins-Regular;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ffffff;
+    text-align:right;
 }
 
 
 /*---------------------------------------------*/
 .right-top-bar a {
     font-family: IRANSans,Poppins-Regular;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.8;
     height: 100%;
-    color: #b2b2b2;
+    color: #ffffff;
     border-right: 1px solid rgba(255,255,255,0.3);
 }
 
@@ -633,7 +634,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*---------------------------------------------*/
 .wrap-search-header input {
-  font-family: Poppins-ExtraLight;
+  font-family: IRANSans, Poppins-ExtraLight;
   font-size: 50px;
   line-height: 1.2;
   color: #333;
@@ -750,7 +751,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .logo-mobile img {
-  max-width: calc(100% - 20px);
+  max-width: calc(140% - 20px);
   max-height: 100%;
   position:absolute;
   top: 0; 
@@ -804,7 +805,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
     .main-menu-m {
         padding-top: 10px;
         padding-bottom: 10px;
-        background-color: #64D2AE;
+        background-color: #5b65af;
+        text-align:right;
     }
 
         .main-menu-m > li > a {
@@ -2201,7 +2203,7 @@ input.num-product::-webkit-inner-spin-button {
 .cl4 {color: #999;}
 .cl5 {color: #222;}
 .cl6 {color: #888;}
-.cl7 {color: #b2b2b2;}
+.cl7 {color: #000;}
 .cl8 {color: #555;}
 .cl9 {color: #aaa;}
 .cl10 {color: #1d1d1d;}
@@ -2251,8 +2253,9 @@ input.num-product::-webkit-inner-spin-button {
 
 .stext-107 {
   font-family: IRANSans,Poppins-Regular;
-  font-size: 13px;
   line-height: 1.923;
+  color:black;
+  font-weight:bold;
 }
 
 .stext-108 {
@@ -2319,10 +2322,11 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .stext-301 {
-  font-family: Montserrat-Bold;
-  font-size: 15px;
-  line-height: 1.6;
-  text-transform: uppercase;
+    font-family: IRANSans, Montserrat-Bold;
+    font-size: 30px;
+    font-weight:700;
+    line-height: 1.6;
+    text-transform: uppercase;
 }
 
 
