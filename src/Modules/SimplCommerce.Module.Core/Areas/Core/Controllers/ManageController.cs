@@ -45,12 +45,12 @@ namespace SimplCommerce.Module.Core.Areas.Core.Controllers
         public async Task<IActionResult> Index(ManageMessageId? message = null)
         {
             ViewData["StatusMessage"] =
-                message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
-                : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
-                : message == ManageMessageId.SetTwoFactorSuccess ? "Your two-factor authentication provider has been set."
-                : message == ManageMessageId.Error ? "An error has occurred."
-                : message == ManageMessageId.AddPhoneSuccess ? "Your phone number was added."
-                : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
+                message == ManageMessageId.ChangePasswordSuccess ? "رمز عبور شما ویرایش شد."
+                : message == ManageMessageId.SetPasswordSuccess ? "رمز عبور شما ثبت گردید."
+                : message == ManageMessageId.SetTwoFactorSuccess ? "ورود دو مرحله ای فعال شد."
+                : message == ManageMessageId.Error ? "خطایی رخ داده است"
+                : message == ManageMessageId.AddPhoneSuccess ? "شماره موبایل شما ثبت گردید."
+                : message == ManageMessageId.RemovePhoneSuccess ? "شماره موبایل شما حذف گردید."
                 : "";
 
             var user = await GetCurrentUserAsync();
@@ -160,7 +160,7 @@ namespace SimplCommerce.Module.Core.Areas.Core.Controllers
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    _logger.LogInformation(3, "User changed their password successfully.");
+                    _logger.LogInformation(3, "کاربر با موفقیت رمزش را تغییر داد.");
                     return RedirectToAction(nameof(Index), new { Message = ManageMessageId.ChangePasswordSuccess });
                 }
                 AddErrors(result);
@@ -203,9 +203,9 @@ namespace SimplCommerce.Module.Core.Areas.Core.Controllers
         public async Task<IActionResult> ManageLogins(ManageMessageId? message = null)
         {
             ViewData["StatusMessage"] =
-                message == ManageMessageId.RemoveLoginSuccess ? "The external login was removed."
-                : message == ManageMessageId.AddLoginSuccess ? "The external login was added."
-                : message == ManageMessageId.Error ? "An error has occurred."
+                message == ManageMessageId.RemoveLoginSuccess ? "ورود با سرویس دیگر حذف شد."
+                : message == ManageMessageId.AddLoginSuccess ? "ورود با سرویس دیگر با موفقیت اضافه شد."
+                : message == ManageMessageId.Error ? "خطایی رخ داده است."
                 : "";
             var user = await GetCurrentUserAsync();
             if (user == null)

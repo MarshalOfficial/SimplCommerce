@@ -67,12 +67,12 @@
         {
             if (User.Identity.IsAuthenticated)
             {
-                <p>Submiting review is only enable for users who have bought this product</p>
+                <p>@Localizer["Submiting review is only enable for users who have bought this product"]</p>
             }
             else
             {
-                <p>Please <a href="~/login?ReturnUrl=@Context.Request.Path">login</a> or <a href="~/register?ReturnUrl=@Context.Request.Path">register</a> to submit your review.
-                Please also note that submiting review is only enable for users who have bought this product</p>
+                <p>@Localizer["Please"] <a href="~/login?ReturnUrl=@Context.Request.Path">@Localizer["login"]</a> @Localizer["or"] <a href="~/register?ReturnUrl=@Context.Request.Path">@Localizer["register"]</a> @Localizer["to submit your review."]
+                @Localizer["Please also note that submiting review is only enable for users who have bought this product"]</p>
             }
         }
 
@@ -117,7 +117,7 @@
                asp-route-entityId="@Model.EntityId"
                asp-route-entityTypeId="@Model.EntityTypeId"
                asp-route-pageNumber="1"
-               asp-route-pageSize="25">View all @Model.ReviewsCount reviews</a>
+               asp-route-pageSize="25">@Localizer["View all"] @Model.ReviewsCount @Localizer["reviews"]</a>
         }
     </div>
 </div>

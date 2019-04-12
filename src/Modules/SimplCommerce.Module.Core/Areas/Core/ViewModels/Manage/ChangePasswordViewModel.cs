@@ -4,20 +4,20 @@ namespace SimplCommerce.Module.Core.Areas.Core.ViewModels.Manage
 {
     public class ChangePasswordViewModel
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "{0} اجباری است")]
         [DataType(DataType.Password)]
-        [Display(Name = "Current password")]
+        [Display(Name = "رمز عبور فعلی")]
         public string OldPassword { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+        [Required(ErrorMessage = "{0} اجباری است")]
+        [StringLength(100, ErrorMessage = "رمز عبور بایستی حداقل 6 کاراکتر باشد.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "New password")]
+        [Display(Name = "رمز عبور جدید")]
         public string NewPassword { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm new password")]
-        [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
+        [Display(Name = "تکرار رمز عبور جدید")]
+        [Compare("NewPassword", ErrorMessage = "رمز عبور جدید و تکرار رمز عبور جدید یکسان نیست اند.")]
         public string ConfirmPassword { get; set; }
     }
 }

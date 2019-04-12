@@ -110,7 +110,7 @@ namespace SimplCommerce.Module.ShoppingCart.Areas.ShoppingCart.Controllers
             {
                 if (cartItem.Product.StockTrackingIsEnabled && cartItem.Product.StockQuantity < model.Quantity)
                 {
-                    return Ok(new { Error = true, Message = $"There are only {cartItem.Product.StockQuantity} items available for {cartItem.Product.Name}" });
+                    return Ok(new { Error = true, Message = $"تنها {cartItem.Product.StockQuantity} عدد از کالای {cartItem.Product.Name} موجود است" });
                 }
             }
 

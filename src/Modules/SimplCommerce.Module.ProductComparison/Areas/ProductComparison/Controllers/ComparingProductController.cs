@@ -50,7 +50,7 @@ namespace SimplCommerce.Module.ProductComparison.Areas.ProductComparison.Control
             try
             {
                 _comparingProductService.AddToComparison(currentUser.Id, model.ProductId);
-                returnModel.Message = "The product has been added to comparison items";
+                returnModel.Message = "محصول به لیست مقایسه اضافه شد";
             }
             catch (TooManyComparingProductException ex)
             {

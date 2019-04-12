@@ -50,7 +50,7 @@
 
                 vm.saveOrderNote = function saveOrderNote() {
                     shoppingCartService.saveOrderNote(vm.cart.orderNote).then(function () {
-                        toastr.success('Order note has been saved');
+                        toastr.success('توضیحات سفارش با موفقیت ثبت شد');
                     });
                 };
 

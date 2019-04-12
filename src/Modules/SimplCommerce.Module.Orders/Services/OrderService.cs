@@ -214,12 +214,12 @@ namespace SimplCommerce.Module.Orders.Services
             {
                 if (!cartItem.Product.IsAllowToOrder || !cartItem.Product.IsPublished || cartItem.Product.IsDeleted)
                 {
-                    return Result.Fail<Order>($"The product {cartItem.Product.Name} is not available any more");
+                    return Result.Fail<Order>($"محصول {cartItem.Product.Name} دیگر موجود نیست");
                 }
 
                 if (cartItem.Product.StockTrackingIsEnabled && cartItem.Product.StockQuantity < cartItem.Quantity)
                 {
-                    return Result.Fail<Order>($"There are only {cartItem.Product.StockQuantity} items available for {cartItem.Product.Name}");
+                    return Result.Fail<Order>($"تنها {cartItem.Product.StockQuantity} عدد از کالای {cartItem.Product.Name} موجود است");
                 }
 
                 var taxPercent = await _taxService.GetTaxPercent(cartItem.Product.TaxClassId, shippingAddress.CountryId, shippingAddress.StateOrProvinceId, shippingAddress.ZipCode);

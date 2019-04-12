@@ -33,33 +33,33 @@ namespace SimplCommerce.Module.Pricing.Services
 
             if(coupon == null || !coupon.CartRule.IsActive)
             {
-                validationResult.ErrorMessage = $"The coupon {couponCode} is not exist.";
+                validationResult.ErrorMessage = $"بن تخفیف  {couponCode} در سیستم موجود نیست";
                 return validationResult;
             }
 
             if (coupon.CartRule.StartOn.HasValue && coupon.CartRule.StartOn > DateTimeOffset.Now)
             {
-                validationResult.ErrorMessage = $"The coupon {couponCode} should be used after {coupon.CartRule.StartOn}.";
+                validationResult.ErrorMessage = $"بن تخفیف {couponCode} بایستی از تاریخ مشخص شده به بعد مورد استفاده قرار گیرد {coupon.CartRule.StartOn}.";
                 return validationResult;
             }
 
             if (coupon.CartRule.EndOn.HasValue && coupon.CartRule.EndOn <= DateTimeOffset.Now)
             {
-                validationResult.ErrorMessage = $"The coupon {couponCode} is expired.";
+                validationResult.ErrorMessage = $"بن تخفیف {couponCode} منقضی شده است";
                 return validationResult;
             }
 
             var couponUsageCount = _cartRuleUsageRepository.Query().Count(x => x.CouponId == coupon.Id);
             if(coupon.CartRule.UsageLimitPerCoupon.HasValue && couponUsageCount >= coupon.CartRule.UsageLimitPerCoupon)
             {
-                validationResult.ErrorMessage = $"The coupon {couponCode} is all used.";
+                validationResult.ErrorMessage = $"بن تخفیف {couponCode} استفاده شده است";
                 return validationResult;
             }
 
             var couponUsageByCustomerCount = _cartRuleUsageRepository.Query().Count(x => x.CouponId == coupon.Id && x.UserId == customerId);
             if (coupon.CartRule.UsageLimitPerCustomer.HasValue && couponUsageByCustomerCount >= coupon.CartRule.UsageLimitPerCustomer)
             {
-                validationResult.ErrorMessage = $"You can use the coupon {couponCode} only {coupon.CartRule.UsageLimitPerCustomer} times";
+                validationResult.ErrorMessage = $"شما تنها می توانید بن تخفیف {couponCode} را {coupon.CartRule.UsageLimitPerCustomer} مرتبه استفاده نمایید";
                 return validationResult;
             }
 
@@ -109,7 +109,7 @@ namespace SimplCommerce.Module.Pricing.Services
 
             if (!validationResult.DiscountedProducts.Any())
             {
-                validationResult.ErrorMessage = $"The coupon {couponCode} doesn't apply to any products in your cart";
+                validationResult.ErrorMessage = $"بن تخفیف {couponCode} شامل کالاهای موجود در سبد خرید شما نمی شود";
                 return validationResult;
             }
 
@@ -135,7 +135,7 @@ namespace SimplCommerce.Module.Pricing.Services
                     return validationResult;
 
                 default:
-                    throw new InvalidOperationException($"{coupon.CartRule.RuleToApply} is not supported");
+                    throw new InvalidOperationException($"{coupon.CartRule.RuleToApply} پشتیبانی نمی شود");
             }
         }
 

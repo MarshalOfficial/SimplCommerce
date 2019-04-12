@@ -228,7 +228,7 @@
 
 @if (Model.RelatedProducts.Any())
 {
-    <h3 class="p-t-25 p-b-25">Related Products</h3>
+    <h3 class="p-t-25 p-b-25">@Localizer["Related Products"]</h3>
     <div class="row product-list">
         @foreach (var product in Model.RelatedProducts)
         {
