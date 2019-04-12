@@ -1,5 +1,70 @@
-﻿.logoff {
-    font-family: Poppins-Regular;
+﻿@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Black.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Bold.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Medium.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Light.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum).eot');
+    src: url('../fonts/fonts-fa/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/fonts-fa/woff2/IRANSansWeb(FaNum).woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/fonts-fa/woff/IRANSansWeb(FaNum).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/fonts-fa/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+.logoff {
+    font-family: IRANSans, Poppins-Regular;
     font-size: 12px;
     line-height: 1.8;
     height: 100%;
@@ -52,7 +117,7 @@
 }
 
 .product-list-filters h3 {
-    margin-top: 27px;
+    text-align:right;
 }
 
 .product-list .btn {
@@ -108,9 +173,9 @@
 }
 
 .category-result h2 {
-    float: left;
+    float: right;
     font-size: 30px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .category-result .badge-results {
@@ -120,6 +185,7 @@
     padding: 3px 8px;
     position: relative;
     background: #c9253c;
+    float:right;
 }
 
 .product-list-display-options {
@@ -252,6 +318,7 @@
 .list-inline {
     margin-bottom: 6px;
     margin-top: 6px;
+    float:left;
 }
 
     .list-inline li {
