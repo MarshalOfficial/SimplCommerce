@@ -372,12 +372,12 @@
 }
 
 .payment-method {
-    height: 100px;
+    height: 200px;
     border: 1px solid #e7e7e7;
     border-radius: 4px;
     padding: 17px 5px 5px;
     margin-bottom: 25px;
-    text-align: center;
+    text-align: justify;
 }
 
 .product-detail .quantity-field {
