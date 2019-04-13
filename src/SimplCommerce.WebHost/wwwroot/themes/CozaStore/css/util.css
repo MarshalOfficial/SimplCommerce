@@ -92,7 +92,7 @@ a:focus {outline: none;}
 a:hover {text-decoration: none;}
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6,p {margin: 0px;}
+h1,h2,h3,h4,h5,h6,p {margin: 0px;padding-bottom: 10px;}
 
 ul, li {
 	margin: 0px;
@@ -344,7 +344,6 @@ iframe {border: none;}
 .p-t-24, .p-tb-24, .p-all-24 {padding-top: 24px;}
 .p-t-25, .p-tb-25, .p-all-25 {padding-top: 25px;}
 .p-t-26, .p-tb-26, .p-all-26 {padding-top: 26px;}
-.p-t-27, .p-tb-27, .p-all-27 {padding-top: 27px;}
 .p-t-28, .p-tb-28, .p-all-28 {padding-top: 28px;}
 .p-t-29, .p-tb-29, .p-all-29 {padding-top: 29px;}
 .p-t-30, .p-tb-30, .p-all-30 {padding-top: 30px;}

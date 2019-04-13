@@ -187,7 +187,18 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 [ Slick2 ]*/
 .slick-slide {outline: none !important;}
 
+.footer-paragh {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
 
+.fcopy {
+    padding: 1px 0;
+    font-size: 7px;
+    border-top: 1px solid #ffdab9;
+    background-color: #5e5f8f;
+}
 
 
 
@@ -398,7 +409,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   display: flex;
   align-items: center;
   height: 65%;
-  margin-right: 55px;
+  margin-left: 55px;
 }
 
 .logo img {
@@ -2203,7 +2214,7 @@ input.num-product::-webkit-inner-spin-button {
 .cl4 {color: #999;}
 .cl5 {color: #222;}
 .cl6 {color: #888;}
-.cl7 {color: #000;}
+.cl7 {color: peachpuff;}
 .cl8 {color: #555;}
 .cl9 {color: #aaa;}
 .cl10 {color: #1d1d1d;}
@@ -2252,10 +2263,11 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .stext-107 {
-  font-family: IRANSans,Poppins-Regular;
-  line-height: 1.923;
-  color:black;
-  font-weight:bold;
+    font-family: IRANSans,Poppins-Regular;
+    line-height: 1.923;
+    color: peachpuff;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .stext-108 {
