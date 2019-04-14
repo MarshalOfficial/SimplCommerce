@@ -189,7 +189,8 @@ namespace SimplCommerce.Module.ShoppingCart.Areas.ShoppingCart.Controllers
 
         private IActionResult CreateCartLockedResult()
         {
-            return Ok(new { Error = true, Message = "Cart is locked for checkout. Please complete or cancel the checkout first" });
+            //return Ok(new { Error = true, Message = "Cart is locked for checkout. Please complete or cancel the checkout first" });
+            return Ok(new { Error = true, Message = "سبد خرید قفل شده است ، لطفا سفارش خود را نهایی یا لغو نمایید" });
         }
     }
 }
