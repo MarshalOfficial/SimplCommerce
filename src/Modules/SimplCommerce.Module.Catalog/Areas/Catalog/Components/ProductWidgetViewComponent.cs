@@ -27,6 +27,7 @@ namespace SimplCommerce.Module.Catalog.Areas.Catalog.Components
 
         public IViewComponentResult Invoke(WidgetInstanceViewModel widgetInstance)
         {
+
             var model = new ProductWidgetComponentVm
             {
                 Id = widgetInstance.Id,
@@ -35,7 +36,7 @@ namespace SimplCommerce.Module.Catalog.Areas.Catalog.Components
             };
 
             var query = _productRepository.Query()
-              .Where(x => x.IsPublished && x.IsVisibleIndividually);
+                .Where(x => x.IsPublished && x.IsVisibleIndividually);
 
             if (model.Setting.CategoryId.HasValue && model.Setting.CategoryId.Value > 0)
             {
@@ -47,11 +48,22 @@ namespace SimplCommerce.Module.Catalog.Areas.Catalog.Components
                 query = query.Where(x => x.IsFeatured);
             }
 
-            model.Products = query
-              .Include(x => x.ThumbnailImage)
-              .OrderByDescending(x => x.CreatedOn)
-              .Take(model.Setting.NumberOfProducts)
-              .Select(x => ProductThumbnail.FromProduct(x)).ToList();
+            if (widgetInstance.Name.ToLower().Contains("جدیدترین"))
+            {
+                model.Products = query
+                    .Include(x => x.ThumbnailImage)
+                    .OrderByDescending(x => x.CreatedOn)
+                    .Take(model.Setting.NumberOfProducts)
+                    .Select(x => ProductThumbnail.FromProduct(x)).ToList();
+            }
+            else
+            {
+                model.Products = query
+                    .Include(x => x.ThumbnailImage)
+                    .OrderBy(x => x.StockQuantity)
+                    .Take(model.Setting.NumberOfProducts)
+                    .Select(x => ProductThumbnail.FromProduct(x)).ToList();
+            }
 
             foreach (var product in model.Products)
             {
