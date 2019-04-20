@@ -178,25 +178,25 @@ namespace SimplCommerce.WebHost.Extensions
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie()
-                .AddFacebook(x =>
-                {
-                    x.AppId = configuration["Authentication:Facebook:AppId"];
-                    x.AppSecret = configuration["Authentication:Facebook:AppSecret"];
+                //.AddFacebook(x =>
+                //{
+                //    x.AppId = configuration["Authentication:Facebook:AppId"];
+                //    x.AppSecret = configuration["Authentication:Facebook:AppSecret"];
 
-                    x.Events = new OAuthEvents
-                    {
-                        OnRemoteFailure = ctx => HandleRemoteLoginFailure(ctx)
-                    };
-                })
-                .AddGoogle(x =>
-                {
-                    x.ClientId = configuration["Authentication:Google:ClientId"];
-                    x.ClientSecret = configuration["Authentication:Google:ClientSecret"];
-                    x.Events = new OAuthEvents
-                    {
-                        OnRemoteFailure = ctx => HandleRemoteLoginFailure(ctx)
-                    };
-                })
+                //    x.Events = new OAuthEvents
+                //    {
+                //        OnRemoteFailure = ctx => HandleRemoteLoginFailure(ctx)
+                //    };
+                //})
+                //.AddGoogle(x =>
+                //{
+                //    x.ClientId = configuration["Authentication:Google:ClientId"];
+                //    x.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+                //    x.Events = new OAuthEvents
+                //    {
+                //        OnRemoteFailure = ctx => HandleRemoteLoginFailure(ctx)
+                //    };
+                //})
                 .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
                 {
                     options.TokenValidationParameters = new TokenValidationParameters
