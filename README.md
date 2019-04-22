@@ -79,7 +79,7 @@ https://github.com/simplcommerce/SimplCommerce/wiki/Roadmap
 
 This project exists thanks to all the people who contribute.
 
-<a href="https://github.com/simplcommerce/SimplCommerce/graphs/contributors"><img src="https://opencollective.com/simplcommerce/contributors.svg?width=890" title="contributors" alt="contributors" /></a>
+<a href="https://github.com/MarshalOfficial/SimplCommerce/graphs/contributors"><img src="https://opencollective.com/simplcommerce/contributors.svg?width=890" title="contributors" alt="contributors" /></a>
 
 ## Backers
 
