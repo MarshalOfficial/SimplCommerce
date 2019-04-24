@@ -4,7 +4,7 @@ namespace SimplCommerce.Module.Comments.Areas.Comments.ViewModels
 {
     public class CommentForm
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [StringLength(300, MinimumLength =10)]
         public string CommentText { get; set; }
 

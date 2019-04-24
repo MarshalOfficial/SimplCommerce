@@ -15,7 +15,7 @@ namespace SimplCommerce.Module.Pricing.Models
 
         public CartRule CartRule { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [StringLength(450)]
         public string Code { get; set; }
 

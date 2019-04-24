@@ -4,7 +4,7 @@ namespace SimplCommerce.Module.Core.Areas.Core.ViewModels.Manage
 {
     public class SetPasswordViewModel
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [StringLength(100, ErrorMessage = "کلمه عبور بایستی حداقل 6 کاراکتر باشد", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "کلمه عبور جدید")]

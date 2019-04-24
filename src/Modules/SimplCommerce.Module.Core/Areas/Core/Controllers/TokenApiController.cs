@@ -90,19 +90,19 @@ namespace SimplCommerce.Module.Core.Areas.Core.Controllers
 
         public class TokenLoginModel
         {
-            [Required(ErrorMessage = "The {0} field is required.")]
+            [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
             public string Username { get; set; }
 
-            [Required(ErrorMessage = "The {0} field is required.")]
+            [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
             public string Password { get; set; }
         }
 
         public class RefreshTokenModel
         {
-            [Required(ErrorMessage = "The {0} field is required.")]
+            [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
             public string Token { get; set; }
 
-            [Required(ErrorMessage = "The {0} field is required.")]
+            [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
             public string RefreshToken { get; set; }
         }
     }

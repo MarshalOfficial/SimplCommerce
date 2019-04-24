@@ -9,10 +9,10 @@ namespace SimplCommerce.Module.Tax.Areas.Tax.ViewModels
         [Range(1, long.MaxValue, ErrorMessage = "Tax Class is required")]
         public long TaxClassId { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string CountryId { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public decimal Rate { get; set; }
 
         public long? StateOrProvinceId { get; set; }

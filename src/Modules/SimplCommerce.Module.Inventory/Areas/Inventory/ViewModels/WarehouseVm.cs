@@ -6,7 +6,7 @@ namespace SimplCommerce.Module.Inventory.Areas.Inventory.ViewModels
     {
         public long Id { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string Name { get; set; }
 
         public long AddressId { get; set; }
@@ -25,10 +25,10 @@ namespace SimplCommerce.Module.Inventory.Areas.Inventory.ViewModels
 
         public long? DistrictId { get; set; }
 
-        [Range(1, long.MaxValue, ErrorMessage = "State or Province is required")]
+        [Range(1, long.MaxValue, ErrorMessage = "منطقه یا استان اجباری است")]
         public long StateOrProvinceId { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string CountryId { get; set; }
     }
 }

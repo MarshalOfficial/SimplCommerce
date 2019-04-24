@@ -18,7 +18,7 @@ namespace SimplCommerce.Module.Core.Models
 
         public Guid UserGuid { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن مقدار این فیلد اجباری است")]
         [StringLength(450)]
         public string FullName { get; set; }
 

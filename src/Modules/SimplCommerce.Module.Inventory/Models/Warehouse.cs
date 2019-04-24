@@ -13,7 +13,7 @@ namespace SimplCommerce.Module.Inventory.Models
             Id = id;
         }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [StringLength(450)]
         public string Name { get; set; }
 

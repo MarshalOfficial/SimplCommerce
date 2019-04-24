@@ -6,7 +6,7 @@ namespace SimplCommerce.Module.Search.Models
 {
     public class Query : EntityBase
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [StringLength(500)]
         public string QueryText { get; set; }
 

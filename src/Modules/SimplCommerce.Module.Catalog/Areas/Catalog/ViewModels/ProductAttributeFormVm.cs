@@ -6,10 +6,10 @@ namespace SimplCommerce.Module.Catalog.Areas.Catalog.ViewModels
     {
         public long Id { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string Name { get; set; }
 
-        [Range(1, int.MaxValue, ErrorMessage = "The Attribute Group field is required.")]
+        [Range(1, int.MaxValue, ErrorMessage = "پر کردن این قسمت اجباری است")]
         public long GroupId { get; set; }
     }
 }

@@ -7,13 +7,13 @@ namespace SimplCommerce.Module.Orders.Areas.Orders.ViewModels
 {
     public class AddressFormVm : ValidatableObject
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string ContactName { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string Phone { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string AddressLine1 { get; set; }
 
         public string AddressLine2 { get; set; }

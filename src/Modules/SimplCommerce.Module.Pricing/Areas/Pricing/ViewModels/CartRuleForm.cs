@@ -8,7 +8,7 @@ namespace SimplCommerce.Module.Pricing.Areas.Pricing.ViewModels
     {
         public long Id { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string Name { get; set; }
 
         public string Description { get; set; }
@@ -23,10 +23,10 @@ namespace SimplCommerce.Module.Pricing.Areas.Pricing.ViewModels
 
         public string CouponCode { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string RuleToApply { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public decimal DiscountAmount { get; set; }
 
         public decimal? MaxDiscountAmount { get; set; }

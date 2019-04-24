@@ -5,13 +5,13 @@ namespace SimplCommerce.Infrastructure.Localization
 {
     public class Resource : EntityBase
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [StringLength(450)]
         public string Key { get; set; }
 
         public string Value { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public string CultureId { get; set; }
 
         public Culture Culture { get; set; }

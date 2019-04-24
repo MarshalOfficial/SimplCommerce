@@ -6,7 +6,7 @@ namespace SimplCommerce.Module.Catalog.Models
 {
     public class ProductAttribute : EntityBase
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [StringLength(450)]
         public string Name { get; set; }
 

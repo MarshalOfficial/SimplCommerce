@@ -35,12 +35,12 @@ namespace SimplCommerce.Module.Core.Models
 
         public District District { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         public long StateOrProvinceId { get; set; }
 
         public StateOrProvince StateOrProvince { get; set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [StringLength(450)]
         public string CountryId { get; set; }
 

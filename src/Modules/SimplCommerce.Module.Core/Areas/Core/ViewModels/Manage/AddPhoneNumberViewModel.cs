@@ -4,9 +4,9 @@ namespace SimplCommerce.Module.Core.Areas.Core.ViewModels.Manage
 {
     public class AddPhoneNumberViewModel
     {
-        [Required(ErrorMessage = "The {0} field is required.")]
+        [Required(ErrorMessage = "پر کردن این قسمت اجباری است")]
         [Phone]
-        [Display(Name = "Phone number")]
+        [Display(Name = "تلفن تماس")]
         public string PhoneNumber { get; set; }
     }
 }
