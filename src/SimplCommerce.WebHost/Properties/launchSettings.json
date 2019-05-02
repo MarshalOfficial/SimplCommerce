@@ -1,10 +1,11 @@
+// FOR DEVELOP
 {
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:49209",
-      "sslPort": 0
+      "sslPort": 44385
     }
   },
   "profiles": {
@@ -25,3 +26,33 @@
     }
   }
 }
+
+// FOR PUBLISH
+//{
+//  "iisSettings": {
+//    "windowsAuthentication": false,
+//    "anonymousAuthentication": true,
+//    "iisExpress": {
+//      "applicationUrl": "http://localhost:49209",
+//      "sslPort": 0
+//    }
+//  },
+//  "profiles": {
+//    "IIS Express": {
+//      "commandName": "IISExpress",
+//      "launchBrowser": true,
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Development"
+//      }
+//    },
+//    "SimplCommerce.WebHost": {
+//      "commandName": "Project",
+//      "launchBrowser": true,
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Development"
+//      },
+//      "applicationUrl": "https://localhost:49206;http://localhost:49208"
+//    }
+//  }
+//}
+

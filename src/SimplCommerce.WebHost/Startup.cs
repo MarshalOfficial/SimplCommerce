@@ -19,6 +19,7 @@ using SimplCommerce.Module.Core.Data;
 using SimplCommerce.Module.Localization.Extensions;
 using SimplCommerce.Module.Localization.TagHelpers;
 using SimplCommerce.WebHost.Extensions;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace SimplCommerce.WebHost
 {
@@ -81,6 +82,11 @@ namespace SimplCommerce.WebHost
             {
                 c.SwaggerDoc("v1", new Info { Title = "SimplCommerce API", Version = "v1" });
             });
+
+            services.AddHttpsRedirection(options =>
+            {
+                options.HttpsPort = 443;
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -105,6 +111,7 @@ namespace SimplCommerce.WebHost
             );
 
             app.UseHttpsRedirection();
+               
             app.UseCustomizedStaticFiles(env);
             app.UseSwagger();
             app.UseSwaggerUI(c =>
